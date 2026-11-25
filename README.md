@@ -21,12 +21,12 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/cloud-project-mobility/make_drive_mate"><img src="https://raw.githubusercontent.com/cloud-project-mobility/make_drive_mate/dde036b0c88f95a2e0241ce6d6605b30673eeb14/docs/evidence/2026-11-05/public-home-desktop.jpg" alt="DriveMate에서 예시 차량의 주행거리, 공매 참고 가격 분석, 정비 항목을 확인하는 홈 화면"></a>
-      <br><b>DriveMate</b><br>내 차의 기록과 공매 참고 가격을 한곳에서 확인하는 차량 관리 서비스
+      <a href="https://github.com/cloud-project-mobility/make_drive_mate/blob/dde036b0c88f95a2e0241ce6d6605b30673eeb14/docs/evidence/2026-11-05/public-home-desktop.jpg"><img src="https://raw.githubusercontent.com/cloud-project-mobility/make_drive_mate/dde036b0c88f95a2e0241ce6d6605b30673eeb14/docs/evidence/2026-11-05/public-home-desktop.jpg" alt="DriveMate에서 예시 차량의 주행거리, 공매 참고 가격 분석, 정비 항목을 확인하는 홈 화면"></a>
+      <br><b><a href="https://github.com/cloud-project-mobility/make_drive_mate">DriveMate</a></b><br>내 차의 기록과 공매 참고 가격을 한곳에서 확인하는 차량 관리 서비스
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/DriveScene2Label-Team/DriveScene2Label"><img src="https://raw.githubusercontent.com/DriveScene2Label-Team/DriveScene2Label/d26c246a7e718cc17173e0e0d6696ad9a9f41e15/docs/images/scene-workspace-2026-11-11.jpg" alt="DriveScene2Label에서 여섯 방향 카메라 영상과 LiDAR 3D 라벨을 함께 검토하는 작업 화면"></a>
-      <br><b>DriveScene2Label</b><br>문장으로 주행 장면을 찾아 카메라·LiDAR에서 3D 라벨을 검토하는 도구
+      <a href="https://github.com/DriveScene2Label-Team/DriveScene2Label/blob/d26c246a7e718cc17173e0e0d6696ad9a9f41e15/docs/images/scene-workspace-2026-11-11.jpg"><img src="https://raw.githubusercontent.com/DriveScene2Label-Team/DriveScene2Label/d26c246a7e718cc17173e0e0d6696ad9a9f41e15/docs/images/scene-workspace-2026-11-11.jpg" alt="DriveScene2Label에서 여섯 방향 카메라 영상과 LiDAR 3D 라벨을 함께 검토하는 작업 화면"></a>
+      <br><b><a href="https://github.com/DriveScene2Label-Team/DriveScene2Label">DriveScene2Label</a></b><br>문장으로 주행 장면을 찾아 카메라·LiDAR에서 3D 라벨을 검토하는 도구
     </td>
   </tr>
 </table>
