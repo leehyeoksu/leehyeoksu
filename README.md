@@ -14,7 +14,7 @@
   <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-A13D2D?style=flat-square&logo=pytorch&logoColor=white">
 </p>
 
-[DriveMate](#drivemate) · [DriveScene2Label](#drivescene2label) · [연구](#연구) · [대회](#대회)
+[DriveMate](#drivemate) · [DriveScene2Label](#drivescene2label) · [Refine AI](#refine-ai) · [연구](#연구) · [대회](#대회)
 
 ## 모빌리티 프로젝트
 
@@ -48,6 +48,20 @@ nuScenes 원본을 올리면 원하는 주행 장면을 자연어로 찾고, 선
 | 문장으로 전체 데이터 검색 | PostgreSQL에서 거리 계산 결과를 재사용하고, 검색 트랜잭션에 맞는 실행 계획을 선택했습니다. 같은 문장의 CLIP 임베딩은 캐시했습니다. | **5.43초 → 0.246초**. 모델을 예열한 뒤 같은 문장을 반복한 로컬 HTTP 시험의 전체 데이터 검색 중앙값. 두 검색 범위를 포함한 전후 응답 54쌍이 일치했습니다. |
 
 [인덱싱 실험 기록](https://github.com/DriveScene2Label-Team/DriveScene2Label/blob/d26c246a7e718cc17173e0e0d6696ad9a9f41e15/docs/optimization-results-2026-11-18.md#L66-L79) · [검색 SQL과 캐시 변경](https://github.com/DriveScene2Label-Team/DriveScene2Label/commit/725c7e3903f87d9c161da81fed92ad1061d29b53) · [검색 API 측정 조건](https://github.com/DriveScene2Label-Team/DriveScene2Label/blob/d26c246a7e718cc17173e0e0d6696ad9a9f41e15/docs/optimization-resume-2026-11-18.md#L84-L93)
+
+## 개인 프로젝트와 교육
+
+### Refine AI
+
+**2025.12 · 디자인 수업 최종 과제 · 개인 개발**  
+`FastAPI` · `OpenAI API` · `SQLite` · `SQLAlchemy` · `Jinja2`
+
+AI에게 원하는 결과를 설명하기 어려운 사람을 위해, 짧은 요청을 용도에 맞는 프롬프트로 다듬는 웹 서비스를 혼자 개발했습니다. 예를 들어 사용자가 **“사이버펑크 스타일의 미래 도시 야경”**을 입력하고 이미지 분야를 고르면, GPT-4o가 카메라 구도와 조명 조건을 담은 영문 지시문을 제안합니다. 사용자는 결과를 복사해 창작 도구에서 이어서 쓸 수 있습니다.
+
+입력 화면부터 FastAPI 라우터, OpenAI 호출, 기록 화면까지 구현했습니다. 모델 응답은 개선문·분류·맥락 및 출력 형식의 누락 여부·작성 팁으로 나눠 받았습니다. 이 중 원문과 개선문, 분류, 누락 여부를 SQLite에 저장해 이전 요청을 다시 보고 분야별 사용 횟수를 확인할 수 있게 했습니다. [프로젝트와 실행 방법](https://github.com/leehyeoksu/fastapi) · [프롬프트 설계와 모델 호출](https://github.com/leehyeoksu/fastapi/blob/e9d2c14b821fc1019aa08b0c63d87de9024c004c/app/services/service.py#L63-L113) · [저장·조회·통계 API](https://github.com/leehyeoksu/fastapi/blob/e9d2c14b821fc1019aa08b0c63d87de9024c004c/app/routers/prompt.py#L15-L55)
+
+**WASSUP EST AI 모델 개발자 양성과정 13기** · 이스트소프트 · 2025.11.18–2026.04.10 수료  
+부트캠프에서는 트럼프 발언과 업종별 ETF 데이터로 다음 시점의 시장 불확실성 지수를 예측하는 팀 프로젝트에서 AI 모델 개발과 테스트를 맡았습니다. 이후 KHUTHON에서는 문화유산 포스터를 실시간으로 생성할 범위를 검토했고, COSS 창업경진대회에서는 휴대폰으로 스캔한 방의 3D 품질 문제에 Tripo AI를 활용했습니다. [부트캠프 모델 코드](https://github.com/leehyeoksu/-teamproject/commit/6950680c77beeb5a852075ed823dda93c3ace71b) · [대회 프로젝트](#대회)
 
 ## 연구
 
